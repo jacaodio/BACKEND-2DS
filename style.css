@@ -1,0 +1,1345 @@
+/* =====================================================
+   FATECH 2026
+   STYLE.CSS
+===================================================== */
+
+
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #050816;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* ================= VARIÁVEIS ================= */
+
+:root {
+
+    --background: #050816;
+    --background-2: #080d20;
+
+    --card: #0c1329;
+    --card-2: #101a35;
+
+    --blue: #00d9ff;
+    --blue-dark: #009fc0;
+
+    --white: #ffffff;
+    --gray: #a8b1c5;
+
+    --border: rgba(255, 255, 255, 0.10);
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 78px;
+
+    z-index: 1000;
+
+    background: rgba(5, 8, 22, 0.88);
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    border-bottom: 1px solid var(--border);
+
+    animation: headerEntrada 0.8s ease forwards;
+}
+
+
+.header-container {
+
+    width: min(1200px, 92%);
+
+    height: 100%;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* ================= LOGO FATECH ================= */
+
+/*
+   A imagem precisa ser PNG com fundo transparente.
+*/
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    background: transparent;
+
+}
+
+
+.logo img {
+
+    width: 150px;
+
+    height: auto;
+
+    max-height: 60px;
+
+    display: block;
+
+    object-fit: contain;
+
+    background: transparent;
+
+    transition: 0.3s ease;
+
+}
+
+
+.logo:hover img {
+
+    transform: scale(1.04);
+
+}
+
+
+/* ================= MENU ================= */
+
+.nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 34px;
+}
+
+
+.nav a {
+
+    position: relative;
+
+    color: #dce3f4;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    padding: 8px 0;
+
+    transition: 0.3s ease;
+}
+
+
+.nav a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--blue);
+
+    transition: 0.3s ease;
+}
+
+
+.nav a:hover {
+
+    color: var(--blue);
+}
+
+
+.nav a:hover::after {
+
+    width: 100%;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+
+    width: 100%;
+
+    padding-top: 78px;
+}
+
+
+.hero-banner {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 430px;
+
+    overflow: hidden;
+}
+
+
+.hero-banner > img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(5, 8, 22, 0.92) 0%,
+            rgba(5, 8, 22, 0.68) 45%,
+            rgba(5, 8, 22, 0.38) 100%
+        );
+}
+
+
+.hero-content {
+
+    position: absolute;
+
+    left: 7%;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    max-width: 760px;
+
+    z-index: 2;
+}
+
+
+.tag,
+.section-tag {
+
+    color: var(--blue);
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 12px;
+}
+
+
+.hero-content h1 {
+
+    font-size: clamp(48px, 7vw, 82px);
+
+    line-height: 1;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 18px;
+
+    animation: aparecer 0.8s ease 0.2s both;
+}
+
+
+.hero-content h1 span {
+
+    color: var(--blue);
+}
+
+
+.hero-content h2 {
+
+    max-width: 680px;
+
+    color: #d6dced;
+
+    font-size: clamp(18px, 2.2vw, 25px);
+
+    font-weight: 400;
+
+    line-height: 1.4;
+
+    margin-bottom: 28px;
+
+    animation: aparecer 0.8s ease 0.4s both;
+}
+
+
+/* ================= BOTÕES ================= */
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 14px;
+
+    flex-wrap: wrap;
+
+    animation: aparecer 0.8s ease 0.6s both;
+}
+
+
+.btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding: 0 24px;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    transition: 0.3s ease;
+}
+
+
+.btn-primary {
+
+    background: var(--blue);
+
+    color: #031019;
+}
+
+
+.btn-primary:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 217, 255, 0.25);
+}
+
+
+.btn-secondary {
+
+    border: 1px solid rgba(255, 255, 255, 0.22);
+
+    background: rgba(255, 255, 255, 0.06);
+
+    color: white;
+}
+
+
+.btn-secondary:hover {
+
+    border-color: var(--blue);
+
+    color: var(--blue);
+
+    transform: translateY(-3px);
+}
+
+
+/* ================= SEÇÕES ================= */
+
+.section {
+
+    width: min(1200px, 92%);
+
+    margin: auto;
+
+    padding: 100px 0;
+}
+
+
+.section-dark {
+
+    width: 100%;
+
+    padding-left:
+        max(4%, calc((100% - 1200px) / 2));
+
+    padding-right:
+        max(4%, calc((100% - 1200px) / 2));
+
+    background: var(--background-2);
+}
+
+
+.section-title {
+
+    display: flex;
+
+    gap: 22px;
+
+    align-items: flex-start;
+
+    margin-bottom: 55px;
+}
+
+
+.section-title > span {
+
+    color: var(--blue);
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    padding-top: 7px;
+}
+
+
+.section-title h2 {
+
+    font-size: clamp(32px, 5vw, 50px);
+
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+}
+
+
+.section-tag {
+
+    margin-bottom: 8px;
+}
+
+
+/* ================= SOBRE ================= */
+
+.about-content {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 70px;
+
+    align-items: start;
+}
+
+
+.about-text {
+
+    color: var(--gray);
+
+    font-size: 17px;
+}
+
+
+.about-text p {
+
+    margin-bottom: 22px;
+}
+
+
+.about-text strong {
+
+    color: white;
+}
+
+
+.about-cards {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+
+.info-card {
+
+    padding: 28px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 14px;
+
+    transition: 0.35s ease;
+}
+
+
+.info-card:last-child {
+
+    grid-column: span 2;
+}
+
+
+.info-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color:
+        rgba(0, 217, 255, 0.4);
+}
+
+
+.card-icon {
+
+    font-size: 30px;
+
+    margin-bottom: 18px;
+}
+
+
+.info-card h3 {
+
+    font-size: 19px;
+
+    margin-bottom: 8px;
+}
+
+
+.info-card p {
+
+    color: var(--gray);
+
+    font-size: 14px;
+}
+
+
+/* ================= ATRAÇÕES ================= */
+
+.attractions-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.attraction-card {
+
+    position: relative;
+
+    padding: 32px;
+
+    min-height: 270px;
+
+    overflow: hidden;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 15px;
+
+    transition: 0.35s ease;
+}
+
+
+.attraction-card:hover {
+
+    transform: translateY(-7px);
+
+    border-color:
+        rgba(0, 217, 255, 0.45);
+}
+
+
+.attraction-number {
+
+    position: absolute;
+
+    top: 20px;
+    right: 22px;
+
+    color: rgba(255, 255, 255, 0.18);
+
+    font-size: 14px;
+
+    font-weight: 800;
+}
+
+
+.attraction-icon {
+
+    font-size: 35px;
+
+    margin-bottom: 20px;
+}
+
+
+.attraction-card h3 {
+
+    font-size: 21px;
+
+    margin-bottom: 10px;
+}
+
+
+.attraction-card p {
+
+    color: var(--gray);
+
+    font-size: 14px;
+}
+
+
+/* ================= EDUCAÇÃO PROFISSIONAL ================= */
+
+.professional {
+
+    padding-top: 110px;
+
+    padding-bottom: 110px;
+}
+
+
+.professional-content {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+
+.professional-text h2 {
+
+    font-size:
+        clamp(35px, 5vw, 54px);
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+
+.professional-text p:not(.section-tag) {
+
+    color: var(--gray);
+
+    font-size: 16px;
+
+    margin-bottom: 18px;
+}
+
+
+.professional-highlight {
+
+    padding: 50px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0c1732,
+            #081021
+        );
+
+    border: 1px solid var(--border);
+
+    border-radius: 18px;
+}
+
+
+.highlight-line {
+
+    width: 55px;
+
+    height: 4px;
+
+    background: var(--blue);
+
+    margin-bottom: 25px;
+}
+
+
+.professional-highlight h3 {
+
+    font-size:
+        clamp(27px, 4vw, 42px);
+
+    line-height: 1.25;
+
+    margin-bottom: 20px;
+}
+
+
+.professional-highlight h3 span {
+
+    color: var(--blue);
+}
+
+
+.professional-highlight p {
+
+    color: var(--gray);
+}
+
+
+/* ================= CURSOS ================= */
+
+.courses-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+.course-card {
+
+    padding: 38px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+
+    border-radius: 17px;
+
+    transition: 0.35s ease;
+}
+
+
+.course-card:hover {
+
+    transform: translateY(-7px);
+
+    border-color:
+        rgba(0, 217, 255, 0.45);
+}
+
+
+.course-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 28px;
+}
+
+
+.course-icon {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 12px;
+
+    background:
+        rgba(0, 217, 255, 0.09);
+
+    border:
+        1px solid rgba(0, 217, 255, 0.2);
+
+    color: var(--blue);
+
+    font-size: 23px;
+
+    font-weight: 800;
+}
+
+
+.course-label {
+
+    color: var(--blue);
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+
+.course-card h3 {
+
+    font-size: 29px;
+
+    line-height: 1.15;
+
+    margin-bottom: 18px;
+}
+
+
+.course-card > p {
+
+    color: var(--gray);
+
+    font-size: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+.course-tags {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+
+.course-tags span {
+
+    padding: 7px 11px;
+
+    border-radius: 6px;
+
+    background:
+        rgba(255, 255, 255, 0.05);
+
+    border: 1px solid var(--border);
+
+    color: #d7deed;
+
+    font-size: 11px;
+}
+
+
+/* ================= CTA ================= */
+
+.cta {
+
+    padding: 110px 20px;
+
+    text-align: center;
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            rgba(0, 217, 255, 0.12),
+            transparent 50%
+        ),
+
+        var(--background);
+
+    border-top:
+        1px solid var(--border);
+}
+
+
+.cta-content {
+
+    max-width: 800px;
+
+    margin: auto;
+}
+
+
+.cta h2 {
+
+    font-size:
+        clamp(36px, 6vw, 62px);
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+
+    margin-bottom: 25px;
+}
+
+
+.cta p:last-child {
+
+    color: var(--gray);
+
+    font-size: 17px;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer {
+
+    background: #030510;
+
+    border-top:
+        1px solid var(--border);
+}
+
+
+.footer-container {
+
+    width: min(1200px, 92%);
+
+    margin: auto;
+
+    padding: 65px 0;
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 0.6fr 1.4fr;
+
+    gap: 60px;
+}
+
+
+.footer-brand p {
+
+    max-width: 300px;
+
+    margin-top: 18px;
+
+    color: var(--gray);
+
+    font-size: 14px;
+}
+
+
+.footer-links {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+.footer h3 {
+
+    font-size: 14px;
+
+    margin-bottom: 12px;
+}
+
+
+.footer-links a {
+
+    width: fit-content;
+
+    color: var(--gray);
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+
+.footer-links a:hover {
+
+    color: var(--blue);
+
+    transform: translateX(4px);
+}
+
+
+/* ================= LOGOS INSTITUCIONAIS ================= */
+
+.footer-logos {
+
+    min-width: 0;
+}
+
+
+.logos-container {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+}
+
+
+.logo-box {
+
+    height: 85px;
+
+    min-width: 130px;
+
+    padding: 12px 18px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.95);
+
+    border-radius: 10px;
+}
+
+
+.logo-box img {
+
+    max-width: 150px;
+
+    max-height: 60px;
+
+    width: auto;
+
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+/* ================= FOOTER BOTTOM ================= */
+
+.footer-bottom {
+
+    width: min(1200px, 92%);
+
+    margin: auto;
+
+    padding: 20px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-top:
+        1px solid var(--border);
+
+    color: #68738b;
+
+    font-size: 12px;
+}
+
+
+/* ================= ANIMAÇÕES ================= */
+
+@keyframes headerEntrada {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(-20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+@keyframes aparecer {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(25px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+
+}
+
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 1000px) {
+
+    .about-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+
+    .attractions-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+
+    .professional-content {
+
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+
+    .footer-container {
+
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .footer-logos {
+
+        grid-column: span 2;
+    }
+
+}
+
+
+@media (max-width: 720px) {
+
+    .header {
+
+        height: 70px;
+    }
+
+
+    .header-container {
+
+        width: 90%;
+    }
+
+
+    .logo img {
+
+        width: 120px;
+
+        max-height: 50px;
+    }
+
+
+    .nav {
+
+        gap: 14px;
+    }
+
+
+    .nav a {
+
+        font-size: 12px;
+    }
+
+
+    .hero {
+
+        padding-top: 70px;
+    }
+
+
+    .hero-banner {
+
+        height: 500px;
+    }
+
+
+    .hero-content {
+
+        left: 6%;
+
+        right: 6%;
+    }
+
+
+    .hero-content h1 {
+
+        letter-spacing: -2px;
+    }
+
+
+    .section {
+
+        width: 90%;
+
+        padding: 75px 0;
+    }
+
+
+    .section-dark {
+
+        padding-left: 5%;
+
+        padding-right: 5%;
+    }
+
+
+    .section-title {
+
+        margin-bottom: 40px;
+    }
+
+
+    .about-cards {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .info-card:last-child {
+
+        grid-column: auto;
+    }
+
+
+    .attractions-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .courses-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .professional-highlight {
+
+        padding: 30px;
+    }
+
+
+    .footer-container {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    .footer-logos {
+
+        grid-column: auto;
+    }
+
+
+    .logos-container {
+
+        justify-content: flex-start;
+    }
+
+
+    .footer-bottom {
+
+        flex-direction: column;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .logo img {
+
+        width: 105px;
+    }
+
+
+    .nav {
+
+        gap: 9px;
+    }
+
+
+    .nav a {
+
+        font-size: 10px;
+    }
+
+
+    .hero-banner {
+
+        height: 520px;
+    }
+
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+
+    .btn {
+
+        width: 100%;
+    }
+
+
+    .logo-box {
+
+        width: 100%;
+    }
+
+}
