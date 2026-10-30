@@ -1,799 +1,752 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-
     <meta charset="UTF-8">
+    <title>back-end deivid</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta
-        name="description"
-        content="FATECH 2026 - Feira de Tecnologia, inovação, conhecimento e criatividade."
-    >
-
-    <title>FATECH 2026 | Feira de Tecnologia</title>
+    <meta name="description"
+          content="Descubra a bateria, o violão, a guitarra, o piano e o teclado. Conheça suas partes e curiosidades.">
 
     <link rel="stylesheet" href="style.css">
-
+    <script src="script.js" defer></script>
 </head>
-
 
 <body>
 
+    <header class="header" id="inicio">
+        </a>
 
-    <!-- ================= CABEÇALHO ================= -->
+        <button class="menu-toggle"
+                id="menu-toggle"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="navbar">
+            ☰
+        </button>
 
-    <header class="header">
-
-        <div class="header-container">
-
-
-            <!-- LOGO FATECH -->
-
-            <a href="#inicio" class="logo">
-            </a>
-
-
-            <!-- MENU -->
-
-            <nav class="nav">
-
-                <a href="#inicio">
-                    Início
-                </a>
-
-                <a href="#sobre">
-                    Sobre
-                </a>
-
-                <a href="#atracoes">
-                    Atrações
-                </a>
-
-                <a href="#cursos">
-                    Cursos
-                </a>
-
-            </nav>
-
-        </div>
-
+        <nav class="navbar" id="navbar">
+            <a href="#inicio">Início</a>
+            <a href="#instrumentos">Instrumentos</a>
+            <a href="#bateria">Bateria</a>
+            <a href="#violao">Violão</a>
+            <a href="#guitarra">Guitarra</a>
+            <a href="#piano">Piano</a>
+            <a href="#teclado">Teclado</a>
+        </nav>
     </header>
-
-
-
-    <!-- ================= CONTEÚDO ================= -->
 
     <main>
 
+        <!-- APRESENTAÇÃO -->
 
-        <!-- ================= INÍCIO ================= -->
+        <section class="hero">
+            <div class="hero-content">
 
-        <section class="hero" id="inicio">
+                <span class="tag">EXPLORE O UNIVERSO SONORO</span>
 
-            <div class="hero-banner">
-
-
-                <!-- BANNER -->
-
-                <img
-                    src="c:\Users\deivi\Downloads\Logo FATECH.jpg"
-                    alt="Banner da FATECH 2026"
-                >
-
-
-                <!-- ESCURECIMENTO DO BANNER -->
-
-                <div class="hero-overlay"></div>
-
-
-                <!-- CONTEÚDO DO BANNER -->
-
-                <div class="hero-content">
-
-                    <p class="tag">
-                        FEIRA DE TECNOLOGIA • 2026
-                    </p>
-
-                    <h1>
-                        FATECH <span>2026</span>
-                    </h1>
-
-                    <h2>
-                        Tecnologia, criatividade e conhecimento
-                        transformando ideias em projetos.
-                    </h2>
-
-
-                    <div class="hero-buttons">
-
-                        <a
-                            href="#sobre"
-                            class="btn btn-primary"
-                        >
-                            Conheça a FATECH
-                        </a>
-
-                        <a
-                            href="#atracoes"
-                            class="btn btn-secondary"
-                        >
-                            Ver atrações
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= SOBRE ================= -->
-
-        <section class="section" id="sobre">
-
-
-            <div class="section-title">
-
-                <span>01</span>
-
-                <div>
-
-                    <p class="section-tag">
-                        SOBRE A FATECH
-                    </p>
-
-                    <h2>
-                        Conheça a nossa feira
-                    </h2>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="about-content">
-
-
-                <div class="about-text">
-
-                    <p>
-                        Na FATECH, os alunos dos cursos de
-                        <strong>Desenvolvimento de Sistemas</strong>
-                        e de
-                        <strong>Administração</strong>
-                        apresentam trabalhos que unem tecnologia,
-                        pesquisa e criatividade.
-                    </p>
-
-                    <p>
-                        É um espaço de aprendizado prático,
-                        troca de ideias e valorização do esforço
-                        coletivo das turmas.
-                    </p>
-
-                    <p>
-                        A feira tem como objetivo aproximar o
-                        ensino técnico da comunidade, incentivando
-                        o protagonismo dos alunos dos cursos de
-                        Desenvolvimento de Sistemas e de
-                        Administração e destacando a importância
-                        da educação voltada para o futuro.
-                    </p>
-
-                </div>
-
-
-
-                <div class="about-cards">
-
-
-                    <div class="info-card">
-
-                        <div class="card-icon">
-                            💡
-                        </div>
-
-                        <h3>
-                            Inovação
-                        </h3>
-
-                        <p>
-                            Novas ideias e soluções desenvolvidas
-                            pelos estudantes.
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="info-card">
-
-                        <div class="card-icon">
-                            💻
-                        </div>
-
-                        <h3>
-                            Tecnologia
-                        </h3>
-
-                        <p>
-                            Conhecimentos tecnológicos aplicados
-                            na prática.
-                        </p>
-
-                    </div>
-
-
-
-                    <div class="info-card">
-
-                        <div class="card-icon">
-                            🚀
-                        </div>
-
-                        <h3>
-                            Futuro
-                        </h3>
-
-                        <p>
-                            Preparação dos estudantes para novos
-                            desafios profissionais.
-                        </p>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= ATRAÇÕES ================= -->
-
-        <section
-            class="section section-dark"
-            id="atracoes"
-        >
-
-
-            <div class="section-title">
-
-                <span>02</span>
-
-                <div>
-
-                    <p class="section-tag">
-                        O QUE ESPERAR
-                    </p>
-
-                    <h2>
-                        Atrações da FATECH
-                    </h2>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="attractions-grid">
-
-
-                <article class="attraction-card">
-
-                    <span class="attraction-number">
-                        01
-                    </span>
-
-                    <div class="attraction-icon">
-                        🤖
-                    </div>
-
-                    <h3>
-                        Robótica
-                    </h3>
-
-                    <p>
-                        Demonstrações e experiências envolvendo
-                        robótica, automação e tecnologia.
-                    </p>
-
-                </article>
-
-
-
-                <article class="attraction-card">
-
-                    <span class="attraction-number">
-                        02
-                    </span>
-
-                    <div class="attraction-icon">
-                        💻
-                    </div>
-
-                    <h3>
-                        Programação
-                    </h3>
-
-                    <p>
-                        Apresentações relacionadas ao desenvolvimento
-                        de sistemas e programação.
-                    </p>
-
-                </article>
-
-
-
-                <article class="attraction-card">
-
-                    <span class="attraction-number">
-                        03
-                    </span>
-
-                    <div class="attraction-icon">
-                        🌐
-                    </div>
-
-                    <h3>
-                        Internet das Coisas
-                    </h3>
-
-                    <p>
-                        Tecnologias conectadas e soluções baseadas
-                        em IoT.
-                    </p>
-
-                </article>
-
-
-
-                <article class="attraction-card">
-
-                    <span class="attraction-number">
-                        04
-                    </span>
-
-                    <div class="attraction-icon">
-                        🔬
-                    </div>
-
-                    <h3>
-                        Projetos Científicos
-                    </h3>
-
-                    <p>
-                        Pesquisas, experiências e conhecimentos
-                        apresentados pelos estudantes.
-                    </p>
-
-                </article>
-
-
-
-                <article class="attraction-card">
-
-                    <span class="attraction-number">
-                        05
-                    </span>
-
-                    <div class="attraction-icon">
-                        📊
-                    </div>
-
-                    <h3>
-                        Administração
-                    </h3>
-
-                    <p>
-                        Trabalhos relacionados à gestão,
-                        organização e empreendedorismo.
-                    </p>
-
-                </article>
-
-
-
-                <article class="attraction-card">
-
-                    <span class="attraction-number">
-                        06
-                    </span>
-
-                    <div class="attraction-icon">
-                        ⚙️
-                    </div>
-
-                    <h3>
-                        Demonstrações
-                    </h3>
-
-                    <p>
-                        Experiências práticas e apresentações
-                        realizadas pelos alunos.
-                    </p>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= EDUCAÇÃO PROFISSIONAL ================= -->
-
-        <section class="section professional">
-
-
-            <div class="professional-content">
-
-
-                <div class="professional-text">
-
-                    <p class="section-tag">
-                        EDUCAÇÃO PROFISSIONAL
-                    </p>
-
-                    <h2>
-                        Preparação para o futuro
-                    </h2>
-
-                    <p>
-                        A educação profissional proporciona aos
-                        estudantes conhecimentos técnicos e
-                        práticos para sua formação e para o
-                        mercado de trabalho.
-                    </p>
-
-                    <p>
-                        Durante a formação, os alunos desenvolvem
-                        competências, criatividade, responsabilidade,
-                        trabalho em equipe e capacidade de solucionar
-                        problemas.
-                    </p>
-
-                    <p>
-                        A FATECH representa esse aprendizado na
-                        prática, aproximando os conhecimentos
-                        adquiridos em sala de aula das necessidades
-                        do mundo profissional.
-                    </p>
-
-                </div>
-
-
-
-                <div class="professional-highlight">
-
-                    <div class="highlight-line"></div>
-
-                    <h3>
-                        Conhecimento
-                        <span>+</span>
-                        Tecnologia
-                        <span>+</span>
-                        Criatividade
-                    </h3>
-
-                    <p>
-                        Uma combinação para transformar ideias
-                        em possibilidades.
-                    </p>
-
-                </div>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= CURSOS ================= -->
-
-        <section
-            class="section section-dark"
-            id="cursos"
-        >
-
-
-            <div class="section-title">
-
-                <span>03</span>
-
-                <div>
-
-                    <p class="section-tag">
-                        FORMAÇÃO
-                    </p>
-
-                    <h2>
-                        Cursos participantes
-                    </h2>
-
-                </div>
-
-            </div>
-
-
-
-            <div class="courses-grid">
-
-
-                <!-- DESENVOLVIMENTO DE SISTEMAS -->
-
-                <article class="course-card">
-
-                    <div class="course-top">
-
-                        <span class="course-icon">
-                            &lt;/&gt;
-                        </span>
-
-                        <span class="course-label">
-                            TECNOLOGIA
-                        </span>
-
-                    </div>
-
-                    <h3>
-                        Desenvolvimento
-                        de Sistemas
-                    </h3>
-
-                    <p>
-                        Formação voltada para programação,
-                        desenvolvimento de aplicações,
-                        sistemas, banco de dados e tecnologias
-                        digitais.
-                    </p>
-
-                    <div class="course-tags">
-
-                        <span>
-                            Programação
-                        </span>
-
-                        <span>
-                            Web
-                        </span>
-
-                        <span>
-                            Banco de Dados
-                        </span>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- ADMINISTRAÇÃO -->
-
-                <article class="course-card">
-
-                    <div class="course-top">
-
-                        <span class="course-icon">
-                            📈
-                        </span>
-
-                        <span class="course-label">
-                            GESTÃO
-                        </span>
-
-                    </div>
-
-                    <h3>
-                        Administração
-                    </h3>
-
-                    <p>
-                        Formação voltada para gestão,
-                        organização, planejamento,
-                        empreendedorismo e desenvolvimento
-                        profissional.
-                    </p>
-
-                    <div class="course-tags">
-
-                        <span>
-                            Gestão
-                        </span>
-
-                        <span>
-                            Organização
-                        </span>
-
-                        <span>
-                            Empreendedorismo
-                        </span>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-
-        <!-- ================= CHAMADA FINAL ================= -->
-
-        <section class="cta">
-
-            <div class="cta-content">
-
-                <p class="section-tag">
-                    FATECH • 2026
-                </p>
-
-                <h2>
-                    Ideias que aprendem.
-                    <br>
-                    Tecnologia que transforma.
-                </h2>
+                <h1>
+                    A MÚSICA<br>
+                    <span>COMEÇA AQUI.</span>
+                </h1>
 
                 <p>
-                    Um espaço para compartilhar conhecimento,
-                    criatividade e inovação.
+                    Descubra os instrumentos que transformam sons
+                    em emoções. Explore suas características,
+                    conheça suas partes e entenda como funcionam.
                 </p>
+
+                <a href="#instrumentos" class="btn">
+                    
+                </a>
 
             </div>
 
+            <div class="hero-symbols" aria-hidden="true">
+               
+            </div>
+
+                        <div class="hero-footer">
+                
+            </div>
         </section>
 
 
-    </main>
 
 
 
-    <!-- ================= RODAPÉ ================= -->
+        <!-- INTRODUÇÃO -->
 
-    <footer class="footer">
+        <section class="about section">
+            <span class="tag">SOBRE O PROJETO</span>
 
+            <h2>O PODER DA <span>MÚSICA</span></h2>
 
-        <div class="footer-container">
+            <p>
+                Os instrumentos musicais são utilizados por diferentes
+                culturas há milhares de anos. Eles permitem criar ritmos,
+                melodias e harmonias, expressando sentimentos, ideias
+                e tradições. Cada instrumento possui características
+                próprias e uma maneira diferente de produzir sons.
+            </p>
+        </section>
 
+        <!-- CARTÕES DOS INSTRUMENTOS -->
 
-            <!-- IDENTIDADE -->
+        <section class="instruments section" id="instrumentos">
 
-            <div class="footer-brand">
-
-                <a
-                    href="#inicio"
-                    class="logo footer-logo"
-                >
-
-                    <img
-                        src="images/logo-fatech.png"
-                        alt="Logo FATECH 2026"
-                    >
-
-                </a>
-
-                <p>
-                    Feira de Tecnologia, inovação,
-                    conhecimento e criatividade.
-                </p>
-
+            <div class="section-title">
+                <span class="tag">CONHECIMENTO MUSICAL</span>
+                <h2>ESCOLHA SEU <span>INSTRUMENTO</span></h2>
+                <p>Explore cada instrumento e descubra seus segredos.</p>
             </div>
 
+            <div class="instrument-grid">
 
+                <a href="#bateria" class="instrument-card">
+                    <img src="images/bateria.webp"
+                         alt="Bateria acústica"
+                         class="instrument-photo">
 
-            <!-- NAVEGAÇÃO -->
-
-            <div class="footer-links">
-
-                <h3>
-                    Navegação
-                </h3>
-
-                <a href="#inicio">
-                    Início
+                    <div class="card-content">
+                        <span class="card-number">01 / PERCUSSÃO</span>
+                        <h3>BATERIA</h3>
+                        <p>O ritmo que movimenta a música.</p>
+                        <span class="card-link">DESCOBRIR ↗</span>
+                    </div>
                 </a>
 
-                <a href="#sobre">
-                    Sobre
+                <a href="#violao" class="instrument-card">
+                    <img src="images/violao.webp"
+                         alt="Violão acústico"
+                         class="instrument-photo">
+
+                    <div class="card-content">
+                        <span class="card-number">02 / CORDAS</span>
+                        <h3>VIOLÃO</h3>
+                        <p>A harmonia das cordas acústicas.</p>
+                        <span class="card-link">DESCOBRIR ↗</span>
+                    </div>
                 </a>
 
-                <a href="#atracoes">
-                    Atrações
+                <a href="#guitarra" class="instrument-card">
+                    <img src="images/guitarra.webp"
+                         alt="Guitarra elétrica"
+                         class="instrument-photo">
+
+                    <div class="card-content">
+                        <span class="card-number">03 / CORDAS</span>
+                        <h3>GUITARRA</h3>
+                        <p>Timbres marcantes e solos expressivos.</p>
+                        <span class="card-link">DESCOBRIR ↗</span>
+                    </div>
                 </a>
 
-                <a href="#cursos">
-                    Cursos
+                <a href="#piano" class="instrument-card">
+                    <img src="images/piano.jpg"
+                         alt="Piano"
+                         class="instrument-photo">
+
+                    <div class="card-content">
+                        <span class="card-number">04 / TECLAS</span>
+                        <h3>PIANO</h3>
+                        <p>Expressividade em cada nota.</p>
+                        <span class="card-link">DESCOBRIR ↗</span>
+                    </div>
+                </a>
+
+                <a href="#teclado" class="instrument-card">
+                    <img src="images/teclado.jpg"
+                         alt="Teclado musical"
+                         class="instrument-photo">
+
+                    <div class="card-content">
+                        <span class="card-number">05 / TECLAS</span>
+                        <h3>TECLADO</h3>
+                        <p>Tecnologia e diversidade sonora.</p>
+                        <span class="card-link">DESCOBRIR ↗</span>
+                    </div>
                 </a>
 
             </div>
+        </section>
 
+        <!-- BATERIA -->
 
+        <section class="instrument-detail section" id="bateria">
 
-            <!-- LOGOS INSTITUCIONAIS -->
+            <div class="detail-heading">
+                <span class="tag">01 / PERCUSSÃO</span>
+                <h2>CONHECENDO A <span>BATERIA</span></h2>
+                <p>O coração rítmico de muitas bandas.</p>
+            </div>
 
-            <div class="footer-logos">
+            <div class="detail-layout">
 
-                <h3>
-                    Realização
-                </h3>
+                <img src="images/bateria.webp"
+                     alt="Conjunto de bateria"
+                     class="detail-photo">
 
+                <div class="detail-description">
+                    <h3>O que é a bateria?</h3>
 
-                <div class="logos-container">
+                    <p>
+                        A bateria é um conjunto de instrumentos de percussão
+                        tocados por um baterista. Ela ajuda a manter o ritmo,
+                        marcar os tempos musicais e criar diferentes batidas.
+                    </p>
 
-
-                    <div class="logo-box">
-
-                        <img
-                            src="c:\Users\deivi\Downloads\LOGO MENDES - 2025.png    "
-                            alt="Logo do Colégio"
-                        >
-
-                    </div>
-
-
-
-                    <div class="logo-box">
-
-                        <img
-                            src="c:\Users\deivi\Downloads\ADM.png"
-                            alt="Logo da parceria"
-                        >
-
-                    </div>
-
-
-
-                    <div class="logo-box">
-
-                        <img
-                            src="c:\Users\deivi\Downloads\SEED.png"
-                            alt="Logo da SEED"
-                        >
-
-                    </div>
-
-
+                    <p>
+                        O instrumento é comum em estilos como rock, pop,
+                        jazz, funk e muitos outros. O baterista combina
+                        movimentos das mãos e dos pés para produzir
+                        diferentes padrões rítmicos.
+                    </p>
                 </div>
 
             </div>
 
+            <h3 class="parts-heading">AS PARTES DA BATERIA</h3>
 
-        </div>
+            <div class="parts-grid">
 
+                <article class="part-card">
+                    <span class="part-icon">🥁</span>
+                    <h3>Bumbo</h3>
+                    <p>
+                        É o tambor maior, responsável pelos sons graves.
+                        Normalmente, é tocado por meio de um pedal acionado
+                        com o pé.
+                    </p>
+                </article>
 
+                <article class="part-card">
+                    <span class="part-icon">🥁</span>
+                    <h3>Caixa</h3>
+                    <p>
+                        Produz um som marcante e característico.
+                        Possui esteiras metálicas na parte inferior
+                        que vibram quando a pele é atingida.
+                    </p>
+                </article>
 
-        <div class="footer-bottom">
+                <article class="part-card">
+                    <span class="part-icon">🥁</span>
+                    <h3>Tons</h3>
+                    <p>
+                        São tambores de diferentes tamanhos utilizados
+                        para criar viradas e sequências de notas.
+                    </p>
+                </article>
 
-            <p>
-                © 2026 FATECH. Todos os direitos reservados.
-            </p>
+                <article class="part-card">
+                    <span class="part-icon">🥁</span>
+                    <h3>Surdo</h3>
+                    <p>
+                        Produz sons graves e encorpados, ajudando
+                        a complementar os ritmos e as viradas.
+                    </p>
+                </article>
 
-            <p>
-                Feira de Tecnologia
-            </p>
+                <article class="part-card">
+                    <span class="part-icon">🔔</span>
+                    <h3>Chimbal</h3>
+                    <p>
+                        É formado por dois pratos. Seu pedal permite
+                        controlar a abertura e o fechamento deles.
+                    </p>
+                </article>
 
-        </div>
+                <article class="part-card">
+                    <span class="part-icon">🔔</span>
+                    <h3>Pratos</h3>
+                    <p>
+                        Produzem sons metálicos. O crash destaca momentos
+                        da música, enquanto o ride ajuda a marcar o ritmo.
+                    </p>
+                </article>
 
+                <article class="part-card">
+                    <span class="part-icon">🦶</span>
+                    <h3>Pedais</h3>
+                    <p>
+                        Permitem tocar o bumbo com o pé e controlar
+                        a abertura e o fechamento do chimbal.
+                    </p>
+                </article>
 
-    </footer>
+                <article class="part-card">
+                    <span class="part-icon">🥢</span>
+                    <h3>Baquetas</h3>
+                    <p>
+                        São utilizadas para tocar os tambores e pratos.
+                        Seu formato e material influenciam a execução.
+                    </p>
+                </article>
 
+            </div>
 
+            <div class="fact-box">
+                <h3>VOCÊ SABIA?</h3>
+                <p>
+                    Um baterista pode coordenar as mãos e os pés
+                    para executar diferentes ritmos simultaneamente.
+                </p>
+            </div>
 
-    <script src="script.js"></script>
+        </section>
 
-</body>
+        <!-- VIOLÃO -->
 
-</html>
+        <section class="instrument-detail section alternate" id="violao">
+
+            <div class="detail-heading">
+                <span class="tag">02 / CORDAS</span>
+                <h2>CONHECENDO O <span>VIOLÃO</span></h2>
+                <p>Um instrumento versátil para acordes e melodias.</p>
+            </div>
+
+            <div class="detail-layout">
+
+                <img src="images/violao.webp"
+                     alt="Violão acústico"
+                     class="detail-photo">
+
+                <div class="detail-description">
+                    <h3>O que é o violão?</h3>
+
+                    <p>
+                        O violão é um instrumento de cordas muito utilizado
+                        para acompanhar cantores, tocar acordes e executar
+                        melodias. O modelo tradicional geralmente possui
+                        seis cordas, que podem ser de nylon ou de aço.
+                    </p>
+
+                    <p>
+                        Quando uma corda é tocada, ela vibra. No violão
+                        acústico, o corpo do instrumento contribui para
+                        amplificar o som.
+                    </p>
+
+                    <p>
+                        O músico pode utilizar os dedos ou uma palheta
+                        para tocar as cordas. Ao pressioná-las em diferentes
+                        casas, consegue produzir notas e acordes variados.
+                    </p>
+                </div>
+
+            </div>
+
+            <h3 class="parts-heading">AS PARTES DO VIOLÃO</h3>
+
+            <div class="parts-grid">
+
+                <article class="part-card">
+                    <span class="part-icon">〰️</span>
+                    <h3>Cordas</h3>
+                    <p>
+                        Vibram quando são tocadas e iniciam a produção
+                        do som. O violão tradicional geralmente possui
+                        seis cordas.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">🎸</span>
+                    <h3>Braço</h3>
+                    <p>
+                        É a parte alongada do instrumento onde ficam
+                        a escala, os trastes e as casas.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">📏</span>
+                    <h3>Trastes e casas</h3>
+                    <p>
+                        Os trastes são pequenas barras metálicas.
+                        Os espaços entre elas são as casas, onde
+                        o músico posiciona os dedos.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">⚙️</span>
+                    <h3>Tarraxas</h3>
+                    <p>
+                        Permitem ajustar a tensão das cordas
+                        e realizar a afinação do instrumento.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">🎵</span>
+                    <h3>Boca</h3>
+                    <p>
+                        É a abertura localizada no tampo de muitos violões
+                        acústicos e faz parte de sua estrutura sonora.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">🪵</span>
+                    <h3>Corpo</h3>
+                    <p>
+                        No violão acústico, sua caixa de ressonância
+                        ajuda a amplificar o som produzido pelas cordas.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">📍</span>
+                    <h3>Cavalete</h3>
+                    <p>
+                        Ajuda a sustentar e prender as cordas
+                        na região do corpo do violão.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">📌</span>
+                    <h3>Pestana</h3>
+                    <p>
+                        Mantém as cordas posicionadas na transição
+                        entre o braço e a região das tarraxas.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="fact-box">
+                <h3>VOCÊ SABIA?</h3>
+                <p>
+                    Pressionar uma corda em diferentes casas altera
+                    o comprimento vibrante e permite produzir notas
+                    musicais diferentes.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- GUITARRA -->
+
+        <section class="instrument-detail section" id="guitarra">
+
+            <div class="detail-heading">
+                <span class="tag">03 / CORDAS</span>
+                <h2>CONHECENDO A <span>GUITARRA</span></h2>
+                <p>Potência, criatividade e timbres marcantes.</p>
+            </div>
+
+            <div class="detail-layout">
+
+                <img src="images/guitarra.webp"
+                     alt="Guitarra elétrica"
+                     class="detail-photo">
+
+                <div class="detail-description">
+                    <h3>O que é a guitarra?</h3>
+
+                    <p>
+                        A guitarra elétrica utiliza captadores para
+                        transformar a vibração das cordas metálicas
+                        em sinais elétricos.
+                    </p>
+
+                    <p>
+                        Esses sinais podem ser enviados a um amplificador,
+                        que aumenta o volume e pode modificar o timbre.
+                        Pedais de efeitos também permitem criar diferentes
+                        sonoridades.
+                    </p>
+
+                    <p>
+                        A guitarra é muito utilizada no rock, blues,
+                        metal, pop e jazz, sendo conhecida por sua
+                        versatilidade e pela possibilidade de executar
+                        riffs, acordes e solos.
+                    </p>
+                </div>
+
+            </div>
+
+            <h3 class="parts-heading">AS PARTES DA GUITARRA</h3>
+
+            <div class="parts-grid">
+
+                <article class="part-card">
+                    <span class="part-icon">〰️</span>
+                    <h3>Cordas</h3>
+                    <p>
+                        Vibram quando são tocadas e geram o sinal
+                        que será captado pelo sistema eletrônico.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">🎤</span>
+                    <h3>Captadores</h3>
+                    <p>
+                        Transformam a vibração das cordas em sinais
+                        elétricos que podem ser amplificados.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">🎸</span>
+                    <h3>Braço e trastes</h3>
+                    <p>
+                        Permitem ao músico posicionar os dedos
+                        e executar diferentes notas e acordes.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">⚙️</span>
+                    <h3>Tarraxas</h3>
+                    <p>
+                        Ajustam a tensão das cordas e permitem
+                        afinar o instrumento.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">🎚️</span>
+                    <h3>Controles</h3>
+                    <p>
+                        Os controles de volume e tonalidade modificam
+                        características do som enviado ao amplificador.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">🔌</span>
+                    <h3>Saída de áudio</h3>
+                    <p>
+                        Permite conectar a guitarra a um amplificador
+                        ou equipamento de áudio por meio de um cabo.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">📍</span>
+                    <h3>Ponte</h3>
+                    <p>
+                        Ajuda a sustentar as cordas e, dependendo
+                        do modelo, permite ajustar sua altura.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">🎛️</span>
+                    <h3>Chave seletora</h3>
+                    <p>
+                        Em modelos que possuem essa peça, permite
+                        selecionar diferentes captadores e combinações.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="fact-box">
+                <h3>VOCÊ SABIA?</h3>
+                <p>
+                    Efeitos como distorção, delay e reverberação
+                    permitem transformar bastante o som de uma guitarra.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- PIANO -->
+
+        <section class="instrument-detail section alternate" id="piano">
+
+            <div class="detail-heading">
+                <span class="tag">04 / TECLAS</span>
+                <h2>CONHECENDO O <span>PIANO</span></h2>
+                <p>Expressividade e harmonia em cada tecla.</p>
+            </div>
+
+            <div class="detail-layout">
+
+                <img src="images/piano.jpg"
+                     alt="Piano musical"
+                     class="detail-photo">
+
+                <div class="detail-description">
+                    <h3>O que é o piano?</h3>
+
+                    <p>
+                        O piano é um instrumento de teclas utilizado
+                        para executar melodias, acordes e harmonias.
+                        No piano acústico, pressionar uma tecla aciona
+                        um mecanismo que faz um martelo atingir cordas.
+                    </p>
+
+                    <p>
+                        A vibração dessas cordas é transmitida à estrutura
+                        de ressonância, contribuindo para a produção do som.
+                        A intensidade das notas pode variar conforme
+                        a maneira de tocar.
+                    </p>
+
+                    <p>
+                        Existem pianos de cauda, verticais e digitais.
+                        Eles são utilizados em estilos como música clássica,
+                        jazz, pop e muitos outros.
+                    </p>
+                </div>
+
+            </div>
+
+            <h3 class="parts-heading">AS PARTES DO PIANO</h3>
+
+            <div class="parts-grid">
+
+                <article class="part-card">
+                    <span class="part-icon">🎹</span>
+                    <h3>Teclas</h3>
+                    <p>
+                        São pressionadas para acionar o mecanismo
+                        que produz as notas musicais.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">🔨</span>
+                    <h3>Martelos</h3>
+                    <p>
+                        No piano acústico, atingem as cordas
+                        quando as teclas são pressionadas.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">〰️</span>
+                    <h3>Cordas</h3>
+                    <p>
+                        Vibram para produzir o som nos modelos
+                        acústicos, correspondendo a diferentes notas.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">🪵</span>
+                    <h3>Tábua harmônica</h3>
+                    <p>
+                        Recebe as vibrações das cordas e ajuda
+                        a projetar o som do piano acústico.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">🦶</span>
+                    <h3>Pedais</h3>
+                    <p>
+                        Podem prolongar as notas e modificar
+                        a sustentação ou a intensidade do som.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">🎼</span>
+                    <h3>Estante</h3>
+                    <p>
+                        Serve para apoiar partituras ou outros materiais
+                        utilizados durante a execução musical.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="fact-box">
+                <h3>VOCÊ SABIA?</h3>
+                <p>
+                    Apesar de possuir teclas, o piano acústico é classificado
+                    como instrumento de cordas percutidas, porque pequenos
+                    martelos atingem suas cordas.
+                </p>
+            </div>
+
+        </section>
+
+        <!-- TECLADO -->
+
+        <section class="instrument-detail section" id="teclado">
+
+            <div class="detail-heading">
+                <span class="tag">05 / TECLAS</span>
+                <h2>CONHECENDO O <span>TECLADO</span></h2>
+                <p>Tecnologia e diversidade de sons.</p>
+            </div>
+
+            <div class="detail-layout">
+
+                <img src="images/teclado.jpg"
+                     alt="Teclado musical eletrônico"
+                     class="detail-photo">
+
+                <div class="detail-description">
+                    <h3>O que é o teclado?</h3>
+
+                    <p>
+                        O teclado musical é um instrumento eletrônico
+                        que permite produzir diferentes sons por meio
+                        das teclas.
+                    </p>
+
+                    <p>
+                        Dependendo do modelo, pode reproduzir timbres
+                        de piano, órgão, violino, flauta e sintetizadores.
+                        Muitos teclados também oferecem ritmos e
+                        acompanhamentos automáticos.
+                    </p>
+
+                    <p>
+                        O instrumento é utilizado para estudar música,
+                        compor, realizar apresentações e acompanhar
+                        outros músicos.
+                    </p>
+                </div>
+
+            </div>
+
+            <h3 class="parts-heading">AS PARTES DO TECLADO</h3>
+
+            <div class="parts-grid">
+
+                <article class="part-card">
+                    <span class="part-icon">🎹</span>
+                    <h3>Teclas</h3>
+                    <p>
+                        Permitem executar notas e acordes.
+                        A quantidade varia conforme o modelo.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">🖥️</span>
+                    <h3>Visor</h3>
+                    <p>
+                        Nos modelos que possuem tela, apresenta
+                        timbres, ritmos e configurações.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">🎚️</span>
+                    <h3>Controles</h3>
+                    <p>
+                        Permitem selecionar sons, ajustar volumes
+                        e modificar diferentes configurações.
+                    </p>
+                </article>
+
+                <article class="part-card">
+                    <span class="part-icon">🎵</span>
+                    <h3>Timbres</h3>
+                    <p>
+                        São os sons disponíveis, que podem imitar
+                        instrumentos ou criar sonoridades eletrônicas.
+                    </
